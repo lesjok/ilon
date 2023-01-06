@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ilon/static/css/main.41ea3778.css",
+    "main.js": "/ilon/static/js/main.52b2066e.js",
+    "static/media/background-with-title.jpg": "/ilon/static/media/background-with-title.31869811f63f4283f339.jpg",
+    "static/media/background.jpg": "/ilon/static/media/background.5eafae29453d5c12fa77.jpg",
+    "static/media/menu-icon.svg": "/ilon/static/media/menu-icon.a71b69c2336066a4e92e.svg",
+    "index.html": "/ilon/index.html",
+    "main.41ea3778.css.map": "/ilon/static/css/main.41ea3778.css.map",
+    "main.52b2066e.js.map": "/ilon/static/js/main.52b2066e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41ea3778.css",
+    "static/js/main.52b2066e.js"
+  ]
+}
