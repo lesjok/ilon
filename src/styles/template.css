@@ -1,0 +1,190 @@
+
+/* ------------1. CONTAINER(START)------------*/
+.App {
+  background-image: url('../images/background-with-title.jpg');
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: top center;
+  height: 100vh;
+}
+.container {
+  max-width: 1214px;
+}
+/* ------------1. CONTAINER(END)------------*/
+
+/* ------------2. ССЫЛКИ(START)------------*/
+.nav-link {
+  white-space: nowrap;
+  color: #fff;
+  border: none;
+  padding-bottom: 7px;
+}
+.nav-link:hover {
+  color: #989393;
+  border-bottom: 1px solid #3d3d3d;
+}
+/* ------------2. ССЫЛКИ(END)------------*/
+
+/* ------------3. HEADER(START)------------*/
+.header {
+  border-bottom: 1px solid #989393;
+}
+.corners {
+  background-image: url('../images/logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  height: 85px;
+  margin-left: 350px;
+}
+.navbar-collapse {
+  justify-content: center;
+}
+.navbar-toggler {
+  margin-left: auto;
+}
+.navbar-toggler-icon {
+  background-image: url('../images/icons/menu-icon.svg');
+}
+/* ------------3. HEADER(END)------------*/
+
+/* ------------4. MAIN(START)------------*/
+.main {
+  padding-top: 63px;
+}
+.button {
+  background-image: url('../images/button-frame.png');
+  background-position: center;
+  margin-top: 35vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 243px;
+  height: 35px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.title-img {
+  margin-top: 243px;
+}
+.line {
+  width: 406px;
+  height: 57px;
+  margin: 75px 237px 63px 1px;
+}
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.advantage {
+  white-space: nowrap;
+  border: none;
+  width: 185px;
+  height: 185px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  background-image: linear-gradient(to top left, rgba(225, 225, 225, 0.03), transparent);
+  transition: all 0.7s;
+}
+.square-top-right {
+  background-image: linear-gradient(to top right, rgba(225, 225, 225, 0.03), transparent);
+}
+.square-bottom-right {
+  background-image: linear-gradient(to bottom right, rgba(225, 225, 225, 0.03), transparent);
+}
+.square-bottom-left {
+  background-image: linear-gradient(to bottom left, rgba(225, 225, 225, 0.03), transparent);
+}
+.advantage:hover {
+  border: 0.5px solid -webkit-linear-gradient(top left,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0) 20%,
+  rgba(0, 0, 0, 0) 80%,
+  rgba(225, 225, 225, 0.35) 100%);
+  border-image-slice: 1;
+  background: -webkit-linear-gradient(top left,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0) 20%,
+  rgba(0, 0, 0, 0) 80%,
+  rgba(225, 225, 225, 0.35) 100%);
+}
+.advantage-span {
+  font-size: 60px;
+  font-weight: bold;
+}
+/* ------------4. MAIN(END)------------*/
+
+/* ------------5. ADAPTIVE(START)------------*/
+@media screen and (max-width: 1401px) {
+  .nav-link,
+  .advantage {
+    font-size: 12px;
+    text-align: center;
+  }
+  .advantage-span {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .App {
+    background-image: url('../images/background.jpg');
+    background-position: top center;
+    background-size: cover;
+  }
+  .main {
+    background-image: none;
+  }
+  .nav-menu {
+    align-items: flex-end;
+    padding-right: 20px;
+  }
+  .button {
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin: 0 auto 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-menu {
+    margin-left: 0;
+  }
+  .advantages {
+    justify-content: space-around;
+  }
+  .advantages-container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    height: 100%;
+    background-size: cover;
+  }
+  .advantages {
+    flex-direction: column;
+  }
+  .advantage {
+    align-self: center;
+  }
+  .corners {
+    background-size: 80%;
+    width: 60%;
+  }
+}
+/* ------------5. ADAPTIVE(END)------------*/
